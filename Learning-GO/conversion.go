@@ -11,7 +11,7 @@ func main() {
 	fmt.Println(nilai64)
 	fmt.Println(nilai8)
 
-	var name = "Eko"
+	var name = "Fadhil"
 	var e byte = name[0]
 	var eString string = string(e)
 
