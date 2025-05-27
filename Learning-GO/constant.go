@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	const (
-		firstName string = "Eko"
-		lastName         = "Khannedy"
+		firstName string = "Fadhil"
+		lastName         = "Rizqi"
 		value            = 1000
 	)
 
