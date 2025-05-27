@@ -5,13 +5,13 @@ import "fmt"
 func main() {
 	var name string
 
-	name = "Eko Kurniawan"
+	name = "Fadhil Rizqi"
 	fmt.Println(name)
 
-	name = "Eko Khannedy"
+	name = "Fadhil Rizqi"
 	fmt.Println(name)
 
-	var friendName = "Budi"
+	var friendName = "Ahmad"
 	fmt.Println(friendName)
 
 	var age = 30
@@ -21,8 +21,8 @@ func main() {
 	fmt.Println(country)
 
 	var (
-		firstName = "Eko"
-		lastName = "Khannedy"
+		firstName = "Fadhil"
+		lastName = "Rizqi"
 	)
 
 	fmt.Println(firstName)
