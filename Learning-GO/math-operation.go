@@ -13,10 +13,10 @@ func main() {
 	fmt.Println(c)
 
 	var i = 10
-	i += 10 // i = i + 10
+	i += 10
 	fmt.Println(i)
 
-	i++ // i = i + 1
+	i++
 	fmt.Println(i)
 
 	var negative = -100
