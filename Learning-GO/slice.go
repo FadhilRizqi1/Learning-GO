@@ -26,7 +26,7 @@ func main() {
 	fmt.Println("Jumlah kendaraan: ", len(sliceKendaraan))
 	fmt.Println("Jumlah kapasitas: ", cap(sliceKendaraan))
 
-	var sliceKendaraan2 = make([]string, 2, 5)
+	var sliceKendaraan2 = make([]string, (len(sliceKendaraan)), (cap(sliceKendaraan)))
 	sliceKendaraan2[0] = "Mobil"
 	sliceKendaraan2[1] = "Motor"
 
