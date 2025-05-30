@@ -27,4 +27,8 @@ func main() {
 			"pengarang": "Fadhil",
 		},
 	}
+
+	fmt.Println("Buku 1:", buku["buku1"]["judul"], "oleh", buku["buku1"]["pengarang"])
+	fmt.Println("Buku 2:", buku["buku2"]["judul"], "oleh", buku["buku2"]["pengarang"])
+
 }
