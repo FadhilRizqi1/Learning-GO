@@ -11,4 +11,9 @@ func main() {
 	}
 
 	fmt.Println(orang)
+	
+	fmt.Println("Nama:", orang["nama"])
+	fmt.Println("Alamat:", orang["alamat"])
+	fmt.Println("Pekerjaan:", orang["pekerjaan"])
+	fmt.Println("Umur:", orang["umur"])
 }
