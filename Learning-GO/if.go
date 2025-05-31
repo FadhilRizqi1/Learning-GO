@@ -9,16 +9,17 @@ func main() {
 	fmt.Scan(&nilai)
 
 	if nilai >= 90 {
-		fmt.Println("Nilai A")
+		fmt.Println("A")
 	} else if nilai >= 80 {
-		fmt.Println("Nilai B")
+		fmt.Println("B")
 	} else if nilai >= 70 {
-		fmt.Println("Nilai C")
+		fmt.Println("C")
 	} else if nilai >= 60 {
-		fmt.Println("Nilai D")
+		fmt.Println("D")
 	} else {
-		fmt.Println("Nilai E")
+		fmt.Println("E")
 	}
 
+	fmt.Println("Nilai Anda:", nilai)
 
 }
