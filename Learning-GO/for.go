@@ -22,4 +22,11 @@ func main() {
 		}
 	}
 
+
+	slice := []string{"apel", "jeruk", "mangga", "pisang"}
+
+	for j := 0; j < len(slice); j++ {
+		fmt.Println("Buah:", slice[j])
+	}
+
 }
