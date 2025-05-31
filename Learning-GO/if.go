@@ -4,22 +4,27 @@ import "fmt"
 
 func main() {
 
-	nilai := 0
+	var (
+	nilai int
+	akreditasi string
+)
+
+	fmt.Print("Masukkan nilai: ")
 
 	fmt.Scan(&nilai)
 
 	if nilai >= 90 {
-		fmt.Println("A")
+		akreditasi = "A"
 	} else if nilai >= 80 {
-		fmt.Println("B")
+		akreditasi = "B"
 	} else if nilai >= 70 {
-		fmt.Println("C")
+		akreditasi = "C"
 	} else if nilai >= 60 {
-		fmt.Println("D")
+		akreditasi = "D"
 	} else {
-		fmt.Println("E")
+		akreditasi = "E"
 	}
 
-	fmt.Println("Nilai Anda:", nilai)
+	fmt.Println("Nilai Anda:", akreditasi)
 
 }
