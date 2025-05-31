@@ -7,7 +7,7 @@ func main() {
 	var (
 	nilai int
 	akreditasi string
-)
+	)
 
 	fmt.Print("Masukkan nilai: ")
 
