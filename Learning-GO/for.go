@@ -29,4 +29,8 @@ func main() {
 		fmt.Println("Buah:", slice[j])
 	}
 
+	for _, value := range slice {
+		fmt.Printf("Buah: %s\n", value)
+	}
+
 }
