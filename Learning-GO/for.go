@@ -33,4 +33,12 @@ func main() {
 		fmt.Printf("Buah: %s\n", value)
 	}
 
+	for key, value := range map[string]string{
+		"nama": "Nama",
+		"usia": "19",
+		"kota": "Palembang",
+	} {
+		fmt.Println(key, ":", value)
+	}
+
 }
