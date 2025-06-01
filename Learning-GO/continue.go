@@ -11,4 +11,17 @@ func main() {
 
 		fmt.Println("Perulangan Bilangan Ganjil", i)
 	}
+
+	for i := 1; i <= 10; i++ {
+		
+		if i%2 != 0 {
+			continue
+		}
+
+		fmt.Println("Perulangan Bilangan Genap", i)
+	}
+
+
+
+	
 }
