@@ -11,4 +11,8 @@ func main() {
 	for i := 1; i <= 10; i++ {
 		parameterMassage(i)
 	}
+
+	for j := 1; j <= 5; j++ {
+		parameterMassage(j * 2) 
+	}
 }
