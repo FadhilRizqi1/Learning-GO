@@ -11,8 +11,8 @@ import "fmt"
 	}
 
 	func main() {
+		var nama string
 
-		nama := "Fadhil Rizqi"
-
+		fmt.Scan (&nama)
 		fmt.Println(panggilNama(nama))
 	}
