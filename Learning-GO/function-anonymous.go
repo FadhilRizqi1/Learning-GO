@@ -20,4 +20,9 @@ func main(){
 
 	registerUser("Fadhil", blacklist)
 	registerUser("admin", blacklist)
+
+	
+	fmt.Println("Masukkan nama anda:")
+	fmt.Scan(&name)
+	registerUser(name, blacklist)
 }
