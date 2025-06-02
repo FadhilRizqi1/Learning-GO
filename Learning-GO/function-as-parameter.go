@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-func printWithFiler(name string, filter func(string) string) {
+type Filter = func(name string) string 
+
+func printWithFiler(name string, filter Filter) {
 	name = filter(name)
 	fmt.Println("Halo " + filter(name))
 }
