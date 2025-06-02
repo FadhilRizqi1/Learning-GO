@@ -4,7 +4,7 @@ import "fmt"
 
 type Filter = func(name string) string 
 
-func printWithFiler(name string, filter Filter) {
+func printWithFilter(name string, filter Filter) {
 	name = filter(name)
 	fmt.Println("Halo " + filter(name))
 }
@@ -24,6 +24,6 @@ func main() {
 	fmt.Println("Masukkan nama anda:")
 	fmt.Scan(&name)
 
-	printWithFiler(name, spamFilter)	
+	printWithFilter(name, spamFilter)	
 
 }
