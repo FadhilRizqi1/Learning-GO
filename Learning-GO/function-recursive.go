@@ -10,6 +10,14 @@ func factorial(n int) int {
 	return result
 }
 
+func factorialRecursive(n int) int {
+	if n == 0 {
+		return 1
+	} else { 
+		return n * factorialRecursive(n-1)
+	}
+}
+
 func main() {
 	var n int
 	fmt.Println("Masukkan angka untuk menghitung faktorial:")
@@ -17,4 +25,6 @@ func main() {
 	loop := factorial(n)
 
 	fmt.Println("Hasil faktorial dari", n, "adalah:", loop)
+
+	fmt.Println("Hasil faktorial dari", n, "dengan rekursif adalah:", factorialRecursive(n))
 }
