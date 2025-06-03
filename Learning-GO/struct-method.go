@@ -13,6 +13,10 @@ func (orang Identitas) tampilkanNama() {
 	fmt.Println("Umur:", orang.umur)
 }
 
+func (orang Identitas) perkenalan(nama string) {
+	fmt.Println("Halo, nama saya", nama, "umur saya", orang.umur, "tahun.")
+}
+
 func main() {
 	var orang Identitas
 
@@ -21,4 +25,6 @@ func main() {
 	orang.umur = 19
 
 	orang.tampilkanNama()
+
+	orang.perkenalan("Fadhil Rizqi")
 }
