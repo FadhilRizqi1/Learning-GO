@@ -26,7 +26,6 @@ func main() {
 	if  err != nil {
 		fmt.Println("Terjadi kesalahan:", err)
 	} else {
-		fmt.Printf("Hasil pembagian:", pembagian)
+		fmt.Printf("Hasil pembagian: %d\n", pembagian)
 	}
-
-}
+}                    
