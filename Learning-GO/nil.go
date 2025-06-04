@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func callName(name string) map[string]string {
-	if name == " " {
+	if name == "" {
 		return nil
 	} else {
 		return map[string]string{
@@ -21,4 +21,12 @@ func main() {
 
 	var empty = callName(" ")
 	fmt.Println(empty)
-}
+
+	var name map[string]string = callName("")
+
+	if name == nil {
+		fmt.Println("Data kosong")
+	} else {
+			fmt.Println(name)
+		}
+	}
