@@ -36,7 +36,8 @@ func main() {
 
 	tampilkanNama(Fadhil)
 
-	var Thoriq Teman
-	Thoriq.Nama = "Thoriq"
+	Thoriq := Teman{
+		Nama: "Thoriq",
+	}
 	tampilkanNama(Thoriq)
 }
