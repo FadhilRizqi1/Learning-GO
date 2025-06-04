@@ -14,6 +14,9 @@ func any(angka int) interface{} {
 }
 
 func main() {
+	var contoh interface{} = any(2)
+	fmt.Println("Ini adalah contoh interface kosong:", contoh)
+
 	var angka int
 	fmt.Println("Masukkan angka")
 	fmt.Scanln(&angka)
