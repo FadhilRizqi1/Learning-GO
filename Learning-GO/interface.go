@@ -19,6 +19,14 @@ func (orang Orang) tampilkanNama() string {
 	return "Nama: " + orang.namaDepan + " " + orang.namaBelakang + ", Umur: " + fmt.Sprint(orang.umur)
 }
 
+type Teman struct {
+	Nama string
+}
+
+func (orang Teman) tampilkanNama() string {
+	return "Nama Teman: " + orang.Nama
+}
+
 func main() {
 	var Fadhil Orang
 
@@ -27,4 +35,8 @@ func main() {
 	Fadhil.umur = 19
 
 	tampilkanNama(Fadhil)
+
+	var Thoriq Teman
+	Thoriq.Nama = "Thoriq"
+	tampilkanNama(Thoriq)
 }
