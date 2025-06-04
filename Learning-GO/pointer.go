@@ -9,7 +9,7 @@ type Adress struct {
 func main() {
 	alamat1 := Adress{"Palembang", "Sumatera Selatan", "Indonesia"}
 	alamat2 := &alamat1
-	alamat3 := &alamat1
+	var alamat3 *Adress = &alamat1
 
     alamat2.kota = "Jakarta"
 	
@@ -21,5 +21,4 @@ func main() {
 
 	var alamat4 *Adress = new(Adress)
 	alamat4.kota = "Surabaya"
-	fmt.Println(alamat4)
 }
