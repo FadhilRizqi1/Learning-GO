@@ -1,11 +1,10 @@
 package main
 
 import (
-	"Learning-GO/database"
-	"fmt"
+	_ "Learning-GO/database"
 )
 
 func main() {
-	connection := database.GetConnection()
-	fmt.Println(connection)
+	// connection := database.GetConnection()
+	// fmt.Println(connection)
 }
