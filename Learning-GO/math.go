@@ -13,4 +13,7 @@ func main() {
 
 	fmt.Println(math.Ceil(9.2))
 	fmt.Println(math.Floor(9.7))
+
+	fmt.Println(math.Min(9.2, 9.7))
+	fmt.Println(math.Max(9.2, 9.7))
 }
