@@ -15,4 +15,14 @@ func main() {
 	fmt.Println(time.Now().Minute())
 	fmt.Println(time.Now().Second())
 	fmt.Println(time.Now().Nanosecond())
+
+	now := time.Now()
+	fmt.Println(now.Local())
+
+	utc := time.Date(2025, 10, 1, 0, 0, 0, 0, time.UTC)
+	fmt.Println(utc)
+
+	layout := "2006-01-02"
+	parse, _ := time.Parse(layout, "2025-06-09")
+	fmt.Println(parse)
 }
