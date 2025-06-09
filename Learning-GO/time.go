@@ -23,6 +23,10 @@ func main() {
 	fmt.Println(utc)
 
 	layout := "2006-01-02"
-	parse, _ := time.Parse(layout, "2025-06-09")
+	parse, err := time.Parse(layout, "2025-06-09")
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
 	fmt.Println(parse)
 }
