@@ -10,8 +10,8 @@ type sample struct {
 }
 
 type sample2 struct {
-	Nama string
-	Umur int
+	Nama string `required:"true"`
+	Umur int `required:"true"`
 }
 
 func validate(data interface{}) bool {
