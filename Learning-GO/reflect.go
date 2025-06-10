@@ -6,11 +6,11 @@ import (
 )
 
 type sample struct {
-	Name string
+	Nama string
 }
 
 func main() {
-	sample := sample{Name: "Fadhil"}
+	sample := sample{Nama: "Fadhil"}
 
 	var SampleType = reflect.TypeOf(sample)
 	fmt.Println("Type:", SampleType.NumField())
