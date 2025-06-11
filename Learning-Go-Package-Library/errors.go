@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"fmt"
 )
 
 var (
@@ -20,7 +21,12 @@ func getByID(id int) (string, error) {
 }
 
 func main() {
-	item, err := getByID(2)
+	var itemID int
+
+	fmt.Println("Input item ID (1 for valid item, any other number for not found):")
+    fmt.Scan(&itemID)
+
+	item, err := getByID(itemID) 
 	if err != nil {
 		if errors.Is(err, ErrNotFound) {
 			println("Error:", err.Error())
