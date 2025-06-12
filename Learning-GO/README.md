@@ -1,4 +1,4 @@
-### `Learning-GO/`
+### `Learning-Go\`
 This folder contains various Go programs covering fundamental concepts and features of the Go programming language. Each file demonstrates a specific topic, acting as a practical example for learning and reference.
 
 **Key Topics Covered:**
