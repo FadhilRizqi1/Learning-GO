@@ -12,4 +12,6 @@ func main() {
 
 	fmt.Println(slices.Max(value))
 	fmt.Println(slices.Min(name))
+	fmt.Println(slices.Contains(name, "Fadhil"))
+	fmt.Println(slices.Index(name, "Alfin"))
 }
