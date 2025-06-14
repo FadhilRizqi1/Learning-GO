@@ -45,10 +45,10 @@ func readFile(filename string) (string, error) {
 
 
 func main () {
-	err := createNewFile("example.txt", "Ini adalah contoh file.\n")
-	if err != nil {
-		panic(err)
-	}
+	// err := createNewFile("example.txt", "Ini adalah contoh file.\n")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
 	result, err := readFile("example.txt")
 	if err != nil {
