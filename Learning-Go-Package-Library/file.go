@@ -55,10 +55,12 @@ func addToFile(filename string, message string) error {
 
 
 func main () {
-	// err := createNewFile("example.txt", "Ini adalah contoh file.\n")
-	// if err != nil {
-	// 	panic(err)
-	// }
+	err := createNewFile("example.txt", "Ini adalah contoh file.\n")
+	if err != nil {
+		panic(err)
+	}
+
+	addToFile("example.txt", "\nIni adalah tambahan pada file.")
 
 	result, err := readFile("example.txt")
 	if err != nil {
