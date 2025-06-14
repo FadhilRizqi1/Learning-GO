@@ -43,6 +43,16 @@ func readFile(filename string) (string, error) {
 	return message, nil
 }
 
+func addToFile(filename string, message string) error {
+	file, err := os.OpenFile(filename, os.O_RDWR|os.O_APPEND, 0666)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+	file.WriteString(message)
+	return nil
+}
+
 
 func main () {
 	// err := createNewFile("example.txt", "Ini adalah contoh file.\n")
